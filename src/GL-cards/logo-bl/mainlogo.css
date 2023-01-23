@@ -1,0 +1,56 @@
+/* .container--logo-png img {
+    width: 115px;
+    height: 85px;
+} */
+
+.container--logo-png {
+    display: flex;
+}
+
+.block--logo-text {
+    color: #7F9402;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    height: 86px;
+    font-weight: 700;
+    position: relative;
+    right: 40px;
+    margin-left: 55px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@media screen and (max-width: 480px) {
+    .block--logo-text {
+        font-size: 21px;
+    }
+
+    .container--logo-png img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .block--logo-text {
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .block--logo-text {
+        height: 65px;
+    }
+
+    .block--logo-text {
+        font-size: 14px;
+    }
+
+    .container--logo-png img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .block--logo-text {
+        height: 65px;
+    }
+}

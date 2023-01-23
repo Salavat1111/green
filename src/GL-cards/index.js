@@ -1,0 +1,11 @@
+export { default as Menu } from './menu/Menu';
+export { default as Logo } from './logo-bl/Logo';
+export { default as GlobalContent } from './global-content/GlobalContent';
+export { default as Assortment } from './assortment/Assortment';
+export { default as YndexMapsHome } from './map/YndexMapsHome';
+export { default as PriseList } from './map/PriseList';
+export { default as Container } from './Container';
+export { default as AboutUs } from './about-us/AboutUs';
+export { default as Сontacts } from './contacts/Сontacts';
+export { default as Footer } from './footer/Footer';
+export { default as Burger } from './btn-burger/Burger';

@@ -1,0 +1,250 @@
+.container--global-li {
+    position: fixed;
+    width: 100%;
+
+    height: 85px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin: 50px auto; */
+    background-color: rgb(31, 31, 31);
+    z-index: 100;
+}
+
+.block--text-li--li {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.block--text-li--li:hover {
+    color: #6E8E28;
+}
+
+
+
+.container--li-flex {
+    width: 50%;
+    display: flex;
+    justify-content: space-around
+        /* justify-content: space-evenly;
+    align-items: center; */
+}
+
+.block--width--li {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--component-flex {
+    display: flex;
+    width: 90%;
+    height: 86px;
+    margin: auto;
+}
+
+.conteiner--page {
+    width: 25%;
+}
+
+.namber--container-flex {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.namber--container-flex p {
+    color: #809506;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*------------------блок бургер-------------------*/
+.container--burger {
+    width: 30px;
+    height: 21px;
+    z-index: 1000;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    margin: auto;
+}
+
+.ctnt--btn--burger {
+    display: flex;
+    width: 94%;
+    height: auto;
+    justify-content: flex-end;
+}
+
+
+.btn--burger:before {
+    width: 30px;
+    height: 5px;
+    background: #7F9402;
+    position: relative;
+    content: "";
+    display: block;
+    top: -1px;
+
+}
+
+.btn--burger span {
+    width: 30px;
+    height: 5px;
+    background: #7F9402;
+    position: relative;
+    content: "";
+    display: block;
+    top: 3px;
+}
+
+.btn--burger:after {
+    width: 30px;
+    height: 5px;
+    background: #7F9402;
+    position: relative;
+    content: "";
+    display: block;
+    top: 7px;
+}
+
+.btn--burger.active:before {
+    top: 15px;
+    transform: translateY(-7px) rotate(-135deg);
+}
+
+.btn--burger.active span {
+    display: none;
+}
+
+.btn--burger.active:after {
+    top: -4px;
+    transform: translateY(7px) rotate(135deg);
+}
+
+.ctnt--btn--burger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .ctnt--btn--burger {
+        display: block;
+        width: 100px;
+    }
+
+    .block--width--li {
+        display: none;
+    }
+
+    .namber--container-flex {
+        display: none;
+    }
+
+    .container--burger {
+        position: relative;
+
+    }
+
+    .conteiner--page {
+        width: 100%;
+    }
+
+    .container--global-li {
+        width: 800px;
+    }
+
+    .container--global-li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container--global-li {
+        width: 100%;
+        height: 65px;
+    }
+
+    .btn--burger:before {
+        width: 25px;
+        height: 3px;
+    }
+
+    .btn--burger span {
+        width: 25px;
+        height: 3px;
+
+    }
+
+    .btn--burger:after {
+        width: 25px;
+        height: 3px;
+    }
+
+    .btn--burger.active:before {
+        top: 13px;
+    }
+
+    .btn--burger.active:after {
+        top: -4px;
+    }
+
+    .container--burger {
+        top: 25px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .container--global-li {
+        width: 100%;
+        height: 65px;
+    }
+
+    .block--logo-text {
+        font-size: 13px;
+    }
+
+    .container--global-li {
+        height: 65px;
+    }
+
+    .container--component-flex {
+        height: 65px;
+    }
+
+    .btn--burger.active:before {
+        top: 16px;
+    }
+
+    .btn--burger.active:after {
+        top: 0px;
+    }
+
+    .container--burger {
+        top: 25px;
+    }
+
+    .btn--burger:before {
+        width: 20px;
+        height: 2px;
+        top: 5px;
+    }
+
+    .btn--burger span {
+        width: 20px;
+        height: 2px;
+        top: 8px;
+    }
+
+    .btn--burger:after {
+        width: 20px;
+        height: 2px;
+        top: 11px;
+    }
+
+}

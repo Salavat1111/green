@@ -1,0 +1,194 @@
+CSS
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Set core body defaults */
+/* body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+} */
+
+/* html {
+  width: 1920px;
+  max-width: 1920px;
+  overflow-x: hidden;
+} */
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    /* scroll-behavior: auto !important; */
+  }
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* body {
+} */
+
+.gl-container-main {
+  max-width: 1920px;
+  background-color: rgb(255, 255, 255);
+}
+
+.Container--main-top {
+  padding-top: 60px;
+}
+
+.burger {
+  display: none;
+  opacity: 0;
+}
+
+.burger.active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+/*-------------------------адаптив-----------------------*/
+
+
+
+@media screen and (max-width: 800px) {
+
+  /* body {
+    width: 800px;
+  } */
+  .Container--main-top {
+    padding-top: 0px;
+  }
+
+  .gl-container-main {
+    width: 100%;
+  }
+
+  /* .App {
+    width: 800px;
+  } */
+
+  /* html {
+    width: 800px;
+    max-width: 800px;
+    overflow-x: hidden;
+  } */
+
+}
+
+@media screen and (max-width: 480px) {
+
+  /* body {
+    width: 480px;
+  } */
+  .Container--main-top {
+    padding-top: 0px;
+  }
+
+  .gl-container-main {
+    width: 100%;
+  }
+
+  /* .App {
+    width: 480px;
+  } */
+
+  /* html {
+    width: 480px;
+    max-width: 480px;
+    overflow-x: hidden;
+  } */
+
+}
+
+@media screen and (max-width: 320px) {
+
+  /* body {
+    width: 320px;
+  } */
+  .Container--main-top {
+    padding-top: 0px;
+  }
+
+  .gl-container-main {
+    width: 100%;
+  }
+
+  /* .App {
+    width: 320px;
+  } */
+
+  /* html {
+    width: 320px;
+    max-width: 320px;
+    overflow-x: hidden;
+  } */
+}
